@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import jake from '../assets/jake.jpg';
 
 const HomeDiv = styled.div`
     display: flex;
@@ -35,11 +36,29 @@ const Header = styled.h2`
    background: lightblue;
 `
 
+const NavigationLinks = styled.div`
+   height: 300px;
+   background: papayawhip;
+`;
+
+const NavButton = styled.button`
+  margin: 0.5rem 1rem;
+  width: 11rem
+`;
+
+const Image = styled.img`
+
+`;
+
 const HomePage = () => {
     return (
         <HomeDiv>
             <ContentDiv>
-                <Header> This is my header </Header>
+                <Header> Hello! </Header>
+                <NavigationLinks>
+                    <NavButton> Resume </NavButton>
+                    <NavButton> Blog & News </NavButton>
+                </NavigationLinks>
                 <div> Here are links to my tings </div>
                 <Button
                     href="https://github.com/andrewgough94/"
